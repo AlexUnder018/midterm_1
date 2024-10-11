@@ -1,0 +1,295 @@
+@font-face {
+    font-family: "Roboto Light", sans-serif;
+}
+.burger image:hover{
+   color: #f69114;
+
+}
+.burger_menu{
+
+    background: rgb(34, 37, 49);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top:0;
+    left: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.burger_menu.active{
+    left: 0;
+
+}
+.burger {
+    height: 50px;
+    width: 50px;
+    margin-left:25px;
+    margin-right: auto;
+    position: relative;
+}
+.burger span:nth-child(1) {
+    top: 25%;
+}
+
+.burger span:nth-child(3) {
+    top: 75%;
+}
+.burger span{
+     height: 5px;
+    width: 100%;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition : 0.3s ease;
+}
+.burger.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+.burger.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.burger_container{
+
+    margin-right: auto;
+    display: none;
+}
+.header.active{
+    position: fixed;
+}
+.header{
+    background: black;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px ;
+}
+.navigation_bar li{
+    display: inline-block;
+
+}
+.navigation_bar ul{
+    list-style-type: none;
+}
+.navigation_bar{
+    display: flex;
+
+}
+.navigation_bar a{
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+}
+.navigation_bar a:hover{
+    color: #f69114;
+}
+
+
+body{
+    margin: 0;
+}
+.about_me{
+    border-radius: 35px;
+    margin: 35px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*align-items: center;*/
+    background: #bdbdbd;
+}
+.about_me img{
+
+    max-width: 300px;
+    height: auto;
+    padding: 0 25px;
+}
+.about_me_txt{
+    max-width: 300px;
+}
+.about_me h1 {
+    max-width: 300px;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+.about_me h2 {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+.about_me_txt p{
+    font-family: "Roboto Light", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: #dddada;
+}
+
+.family{
+    display: flex;
+    flex-direction: column;
+
+}
+.family img{
+    max-width: 300px;
+    height: auto;
+    padding: 0 25px;
+
+}
+.everyone{
+    display: flex;
+    padding: 25px;
+    border-radius: 35px;
+    margin: 35px;
+    background: #bdbdbd;
+    align-items: center;
+}
+.fathers{
+    display: flex;
+    padding: 25px;
+    border-radius: 35px;
+    margin: 35px;
+    background: #bdbdbd;
+    justify-content:space-between;
+    align-items: center;
+}
+.mom_sister{
+    display: flex;
+    padding: 25px;
+    border-radius: 35px;
+    margin: 35px;
+    background: #bdbdbd;
+    align-items: center;
+}
+.lil_bros{
+    display: flex;
+    padding: 25px;
+    border-radius: 35px;
+    margin: 35px;
+    background: #bdbdbd;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big_bro{
+    display: flex;
+    padding: 25px;
+    border-radius: 35px;
+    margin: 35px;
+    background: #bdbdbd;
+    align-items: center;
+}
+.family_txt p {
+    max-width: 500px;
+    font-size: 20px;
+
+}
+.sdu{
+    background-image:  url("./assets/sdu_pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  /* This will make sure the image covers the entire element */
+
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    border-radius: 25px;
+    justify-content: right;
+    text-align: right;
+
+    z-index: -1;
+}
+.sdu_txt {
+    /*z-index: 1;*/
+    color: white;
+    h1{
+        font-family: helvetica, sans-serif;
+    }
+    p{
+        font-family: "Roboto Light", sans-serif;
+        max-width: 700px;
+    }
+}
+.hobbies{
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+
+}
+.hobbies img{
+    max-width: 50px;
+}
+
+.gaming{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+.snowboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.coding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media  (max-width: 800px){
+    .burger_container{
+        display: block;
+    }
+    .navigation_bar{
+        display: none;
+    }
+    .about_me{
+        display: flex;
+        flex-direction: column;
+    }
+    .everyone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .fathers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mom_sister{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lil_bros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .big_bro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
