@@ -202,8 +202,9 @@ body{
     font-size: 20px;
 
 }
-.sdu{
-    background-image:  url("./assets/sdu_pic.jpg");
+
+.gymn{
+    background-image:  url("./assets/37.jpg");
     background-repeat: no-repeat;
     background-size: cover;  /* This will make sure the image covers the entire element */
 
@@ -211,20 +212,78 @@ body{
     margin: 50px;
     display: flex;
     border-radius: 25px;
-    justify-content: right;
-    text-align: right;
+    justify-content: left;
+    text-align: left;
+    min-height: 500px;
 
+    z-index: -1;
+}
+.gymn_txt{
+    color: white;
+    h1{
+        font-size: 60px;
+        font-family: helvetica, sans-serif;
+    }
+    p{
+        font-size: 20px;
+        font-family: "Roboto Light", sans-serif;
+        max-width: 500px;
+    }
+}
+.abil{
+    background-image:  url("./assets/ABIL.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  /* This will make sure the image covers the entire element */
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    border-radius: 25px;
+    justify-content: left;
+    text-align: left;
+    min-height: 500px;
+    z-index: -1;
+}
+.period{
+    margin-top: auto;
+}
+.abil_txt{
+    color: white;
+    h1{
+        font-size: 60px;
+        font-family: helvetica, sans-serif;
+    }
+    p{
+        font-size: 20px;
+        font-family: "Roboto Light", sans-serif;
+        max-width: 500px;
+    }
+}
+.sdu{
+    background-image:  url("./assets/sdu_pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  /* This will make sure the image covers the entire element */
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    border-radius: 25px;
+    justify-content: left;
+    text-align: left;
+    min-height: 500px;
     z-index: -1;
 }
 .sdu_txt {
     /*z-index: 1;*/
     color: white;
     h1{
+        font-size: 60px;
         font-family: helvetica, sans-serif;
     }
     p{
+        font-size: 20px;
         font-family: "Roboto Light", sans-serif;
-        max-width: 700px;
+        max-width: 500px;
     }
 }
 .hobbies{
@@ -244,6 +303,30 @@ body{
     align-items: center;
     background: #ffffff;
 }
+footer {
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-details p{
+    text-decoration: none;
+
+    font-family: "Roboto Light", sans-serif;
+}
+
+.footer-details a{
+    font-family: "Roboto Light", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-details a:hover{
+    text-decoration: none;
+    color: #fdcb1c;
+}
 .snowboard{
     display: flex;
     flex-direction: column;
@@ -257,10 +340,17 @@ body{
     align-items: center;
 }
 .contacts{
+    h1{text-align: center;}
+    display: flex;
+    margin-bottom: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .telega img{
         max-width: 20px;
     }
     .insta img{
+
         max-width: 20px;
     }
     .whatsapp img{
@@ -268,14 +358,17 @@ body{
     }
     .telega {
         display: flex;
+        justify-content: left;
         gap: 10px;
     }
     .insta {
         display: flex;
+        justify-content: left;
         gap: 10px;
     }
     .whatsapp{
         display: flex;
+        justify-content: left;
         gap: 10px;
         height: 20px;
     }
