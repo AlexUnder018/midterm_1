@@ -232,6 +232,7 @@ body{
 
 .hobbies p{
     max-width: 250px;
+
 }
 .gaming{
     display: flex;
@@ -241,6 +242,7 @@ body{
     background: #d6d6d6;
     padding:25px;
     border-radius: 25px;
+    margin:25px;
 }
 
 .snowboard{
@@ -251,7 +253,7 @@ body{
     background: #d6d6d6;
     padding:25px;
     border-radius: 25px;
-
+    margin:25px;
 }
 .coding{
     display: flex;
@@ -261,7 +263,7 @@ body{
     background: #d6d6d6;
     padding:25px;
     border-radius: 25px;
-
+    margin:25px;
 }
 
 @media all and (max-width: 800px){

@@ -122,6 +122,7 @@ body{
     max-width: 300px;
     height: auto;
     padding: 0 25px;
+    border-color: rgba(0,0,0,0.7);
 }
 .about_me_txt{
     max-width: 300px;
@@ -255,7 +256,30 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.contacts{
+    .telega img{
+        max-width: 20px;
+    }
+    .insta img{
+        max-width: 20px;
+    }
+    .whatsapp img{
+        max-width: 20px;
+    }
+    .telega {
+        display: flex;
+        gap: 10px;
+    }
+    .insta {
+        display: flex;
+        gap: 10px;
+    }
+    .whatsapp{
+        display: flex;
+        gap: 10px;
+        height: 20px;
+    }
+}
 @media  (max-width: 800px){
     .burger_container{
         display: block;
